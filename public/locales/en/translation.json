@@ -1,0 +1,29 @@
+{
+  "answer": "Answer",
+  "back": "Back",
+  "cancel": "Cancel",
+  "date": "Date",
+  "edit-form": "Edit form",
+  "export-pdf": "Export as pdf",
+  "form": "Form",
+  "history": "State history",
+  "messages": {
+    "add": "Add comment",
+    "close": "Close",
+    "header": "Comments",
+    "new": "New comment",
+    "reply": "Reply"
+  },
+  "new": "New row",
+  "next": "Next",
+  "question": "Question",
+  "role": "Role",
+  "saved": "Changes are saved automatically",
+  "submissions": "Submissions",
+  "submit": "Submit",
+  "submitted": "Submitted",
+  "title": "Title",
+  "undo": "Undo",
+  "user": "User",
+  "users": "Users"
+}

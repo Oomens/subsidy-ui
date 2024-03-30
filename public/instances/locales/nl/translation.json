@@ -1,0 +1,29 @@
+{
+  "answer": "Antwoord",
+  "back": "Terug",
+  "cancel": "Annuleren",
+  "date": "Datum",
+  "edit-form": "Formulier aanpassen",
+  "export-pdf": "Exporteer als pdf",
+  "form": "Formulier",
+  "history": "Geschiedenis",
+  "messages": {
+    "add": "Opmerking toevoegen",
+    "close": "Sluiten",
+    "header": "Opmerkingen",
+    "new": "Nieuwe opmerking",
+    "reply": "Reageren"
+  },
+  "new": "Nieuwe rij",
+  "next": "Volgende",
+  "question": "Vraag",
+  "role": "Rol",
+  "saved": "Wijzigingen worden automatisch opgeslagen",
+  "submissions": "Formulieren",
+  "submit": "Inleveren",
+  "submitted": "Ingediend",
+  "title": "Titel",
+  "undo": "Ongedaan maken",
+  "user": "Gebruiker",
+  "users": "Gebruikers"
+}
