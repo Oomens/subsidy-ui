@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: subsidy-ui
+  namespace: "{{ .Release.Namespace }}"
+spec:
+  selector:
+    matchLabels:
+      app: subsidy-ui
+  replicas: 1
+  revisionHistoryLimit: 3
+  template:
+    metadata:
+      labels:
+        app: subsidy-ui
+    spec:
+      containers:
+        - name: subsidy-ui
+          image: "{{ .Values.registry }}/subsidy-ui:{{ .Values.tag }}"
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          env:
+            - name: WORKFLOW_VERSION
+              value: "{{ .Chart.AppVersion }}"
+            - name: GRAPHQL_URI
+              value: "{{ .Values.endpoint }}"

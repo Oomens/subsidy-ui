@@ -1,0 +1,33 @@
+name: build and push container
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: self-hosted
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        
+    - name: Build container
+      run: |
+        docker build -t "registry.digitalocean.com/oomens-cr/subsidy-ui:latest" -f Dockerfile .
+        docker push "registry.digitalocean.com/oomens-cr/subsidy-ui:latest"
+
+    - name: Build chart and release
+      env:
+        UPDATER_SECRET: ${{ secrets.UPDATER_SECRET }}
+      run: |
+        set -euxo pipefail
+        export VERSION=$(date "+0.1.%Y%m%d%H%M%S")
+        helm package --version "${VERSION}" --app-version "${VERSION}" charts/subsidy-ui
+        helm push "subsidy-ui-${VERSION}.tgz" oci://registry.digitalocean.com/oomens-cr/helm
+        
+        curl "https://k8s.oomens.it/gitops-updater?name=subsidy-ui&secret=${UPDATER_SECRET}&version=${VERSION}"

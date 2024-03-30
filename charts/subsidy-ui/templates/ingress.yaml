@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: subsidy-ui-ingress
+  namespace: "{{ .Release.Namespace }}"
+  annotations:
+    kubernetes.io/ingress.class: "{{ .Values.ingressClass }}"
+    cert-manager.io/cluster-issuer: letsencrypt
+    acme.cert-manager.io/http01-ingress-class: {{ .Values.ingressClass }}
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+spec:
+  tls:
+    - hosts:
+        - "{{ .Values.hostname }}"
+      secretName: "{{ .Values.hostname }}-cert"
+  rules:
+    - host: "{{ .Values.hostname }}"
+      http:
+        paths:
+          - path: /instances(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: subsidy-ui
+                port:
+                  number: 80
