@@ -1,4 +1,4 @@
-FROM node:20-alpine AS build
+FROM node:21-alpine AS build
 WORKDIR /source
 
 COPY package-lock.json .
@@ -10,7 +10,7 @@ COPY . .
 
 RUN npm run build
 
-FROM nginx:1.25.2-alpine
+FROM nginx:1.25.4-alpine
 
 RUN apk add bash
 
