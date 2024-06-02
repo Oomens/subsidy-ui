@@ -1,12 +1,17 @@
 {
+  "add": "Add",
   "answer": "Answer",
   "back": "Back",
   "cancel": "Cancel",
+  "choose": "Choose...",
   "date": "Date",
+  "edit-columns": "Add columns",
   "edit-form": "Edit form",
   "export-pdf": "Export as pdf",
   "form": "Form",
   "history": "State history",
+  "instances": "Requests",
+  "main": "Main page",
   "messages": {
     "add": "Add comment",
     "close": "Close",
@@ -16,14 +21,20 @@
   },
   "new": "New application",
   "next": "Next",
+  "picker": {
+    "loading": "Loading...",
+    "title": "Find user"
+  },
   "question": "Question",
   "role": "Role",
   "saved": "Changes are saved automatically",
+  "search": "Search by name or email address",
   "submissions": "Submissions",
   "submit": "Submit",
   "submitted": "Submitted",
   "title": "Title",
   "undo": "Undo",
+  "unknown": "New request",
   "user": "User",
   "users": "Users"
 }
