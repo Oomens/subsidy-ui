@@ -4,6 +4,8 @@
   "back": "Back",
   "cancel": "Cancel",
   "choose": "Choose...",
+  "choose-file_one": "Choose file",
+  "choose-file_other": "Choose file(s)",
   "date": "Date",
   "edit-columns": "Add columns",
   "edit-form": "Edit form",

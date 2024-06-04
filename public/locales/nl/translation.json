@@ -2,6 +2,8 @@
   "answer": "Antwoord",
   "back": "Terug",
   "cancel": "Annuleren",
+  "choose-file_one": "Kies bestand",
+  "choose-file_other": "Kies bestand(en)",
   "date": "Datum",
   "edit-form": "Formulier aanpassen",
   "export-pdf": "Exporteer als pdf",
