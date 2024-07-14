@@ -22,8 +22,11 @@
     "add": "Add comment",
     "close": "Close",
     "header": "Comments",
-    "new": "New comment",
-    "reply": "Reply"
+    "new": "New message",
+    "reply": "Reply",
+    "send": "Send",
+    "subject": "Subject",
+    "text": "Message text"
   },
   "new": "New application",
   "next": "Next",
