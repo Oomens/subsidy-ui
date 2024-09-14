@@ -1,4 +1,5 @@
 import './App.css'
+import 'gnoe-workflow-ui/dist/style.css';
 import {Breadcrumb, WorkflowOutlet} from "gnoe-workflow-ui";
 import {useReactiveVar} from "@apollo/client";
 import {clearToken, setToken, userVar} from "auth/user.ts";
