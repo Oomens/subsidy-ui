@@ -24,14 +24,14 @@ function App() {
   return (
     <>
       <header className="App-header">
-        <div className="App-header-user">
-          {user && <>
-              Logged in as {user.displayName}
-              <div><a type='link' onClick={clearToken}>Logout</a></div>
-          </>}
-        </div>
         <img src={`https://compositio.nl/CMlogo.png`} className="App-logo" alt="logo"/>
         <div className="App-header-text">
+          <div className="App-header-user">
+            {user && <>
+                Logged in as {user.displayName}
+                <div><a type='link' onClick={clearToken}>Logout</a></div>
+            </>}
+          </div>
           <h1>Request for support</h1>
           <h2>Foundation Compositio Mathematica</h2>
 

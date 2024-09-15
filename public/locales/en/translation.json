@@ -24,9 +24,11 @@
     "add": "Add comment",
     "close": "Close",
     "header": "Comments",
+    "last-reply": "Last reply",
     "new": "New message",
     "reply": "Reply",
     "send": "Send",
+    "started-by": "Sent by {{user}} on {{date}}",
     "subject": "Subject",
     "text": "Message text"
   },
