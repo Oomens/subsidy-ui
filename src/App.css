@@ -9,6 +9,12 @@
   max-width: 800px;
 }
 
+@media screen and (min-width: 810px) {
+  .App-header {
+    width: 800px;
+  }
+}
+
 .App-header-user {
   float: right;
   text-align: right;
