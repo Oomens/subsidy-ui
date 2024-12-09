@@ -22,6 +22,9 @@
   "main": "Main page",
   "messages": {
     "add": "Add comment",
+    "assign": "Assign",
+    "assign-title": "Assign message",
+    "assigned-to": "Assigned to",
     "close": "Close",
     "header": "Comments",
     "last-reply": "Last reply",
