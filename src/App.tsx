@@ -1,12 +1,16 @@
 import './App.css'
 import 'gnoe-workflow-ui/dist/style.css';
-import {Breadcrumb, WorkflowOutlet} from "gnoe-workflow-ui";
+import {Breadcrumb, useWorkflowTranslation, WorkflowOutlet} from "gnoe-workflow-ui";
 import {useReactiveVar} from "@apollo/client";
 import {clearToken, setToken, userVar} from "auth/user.ts";
 import {useEffect} from "react";
 
 function App() {
   const user = useReactiveVar(userVar);
+  const { i18n } = useWorkflowTranslation();
+  if (!i18n.language.startsWith("en")) {
+    i18n.changeLanguage("en");
+  }
 
   useEffect(() => {
     if (!user) {
