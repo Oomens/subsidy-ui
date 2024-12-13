@@ -1,4 +1,9 @@
 {
+  "action": {
+    "confirm": "Are you sure you want to execute this action?",
+    "no": "No",
+    "yes": "Yes"
+  },
   "add": "Add",
   "add-row": "Add row",
   "answer": "Answer",
