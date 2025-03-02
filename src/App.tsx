@@ -39,7 +39,7 @@ function App() {
           <h1>Request for support</h1>
           <h2>Foundation Compositio Mathematica</h2>
 
-          <Breadcrumb/>
+          <Breadcrumb baseUrl="/instances" />
         </div>
       </header>
       <main>
