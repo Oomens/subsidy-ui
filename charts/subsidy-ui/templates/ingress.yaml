@@ -18,7 +18,7 @@ spec:
       http:
         paths:
           - path: /instances(/|$)(.*)
-            pathType: Prefix
+            pathType: ImplementationSpecific
             backend:
               service:
                 name: subsidy-ui
