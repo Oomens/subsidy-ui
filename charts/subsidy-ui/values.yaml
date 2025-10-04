@@ -1,6 +1,6 @@
 hostname: subsidy-ui.local
 ingressClass: nginx
 tag: latest
-registry: registry.digitalocean.com/oomens-cr
+registry: gchr.io/oomens
   
 endpoint: journal-endpoint.local
