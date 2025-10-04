@@ -1,6 +1,6 @@
 hostname: subsidy-ui.local
 ingressClass: nginx
 tag: latest
-registry: gchr.io/oomens
+registry: ghcr.io/oomens
   
 endpoint: journal-endpoint.local

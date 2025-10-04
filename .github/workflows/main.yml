@@ -59,5 +59,4 @@ jobs:
         helm push "subsidy-ui-${VERSION}.tgz" oci://${{ env.REGISTRY }}/oomens/helm
         helm registry logout ghcr.io
         
-        # TODO: update
-        # curl "https://k8s.oomens.it/gitops-updater?name=subsidy-ui&secret=${UPDATER_SECRET}&version=${VERSION}"
+        curl "https://k8s.oomens.it/gitops-updater?name=subsidy-ui&secret=${UPDATER_SECRET}&version=${VERSION}"
